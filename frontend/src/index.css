@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+@font-face {
+    font-family: 'Ramona-Light';
+    src: url('./fonts/Harmond/Ramona-Light.ttf');
+}
+
+@font-face {
+    font-family: 'Source-Serif-Pro';
+    src: url('./fonts/source-serif-pro/SourceSerifPro-Regular.otf');
+}
+
+@font-face {
+    font-family: 'Lemon-Milk';
+    src: url('./fonts/lemon_milk/LEMONMILK-Regular.otf');
+}
+
+@font-face {
+    font-family: 'Ramona-Bold';
+    src: url('./fonts/Harmond/Ramona-Bold.ttf');
+}
+
+:root {
+    --color1: #a75638;
+    --color2: #edd58d;
+    --color3: #6a163a;
+    --color4: #907560;
+    --color5: #b19276;
+    --color6: #edd5b8;
+    --color7: #fffbeb;
+}
+
+/* Global
+----------------------------------------------- */
+*,
+*:before,
+*::after {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* main {
+    min-height: 80vh;
+} */
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+#root {
+    text-size-adjust: none;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.footer {
+    margin-top: auto 0 0 0;
+}
+
+.logo-hu {
+    font-size: 1.5rem;
+    font-family: 'Lemon-Milk', sans-serif;
+    margin-bottom: 0;
+}
+
+.logo-gram {
+    font-size: 1.5rem;
+    font-family: 'Lemon-Milk', sans-serif;
+    color: #edd5bd;
+}
+
+.big-logo-hu {
+    font-size: 3rem;
+    font-family: 'Lemon-Milk', sans-serif;
+    margin-bottom: 0;
+}
+
+.big-logo-gram {
+    font-size: 3rem;
+    font-family: 'Lemon-Milk', sans-serif;
+    color: #edd5bd;
+}
+
+.landing-subtext {
+    font-family: 'Source-Serif-Pro', sans-serif;
+    font-size: 1rem;
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    padding: 100px 0 30px 0;
+    /* width: 100%; */
+    color: whitesmoke;
+    font-weight: bold;
+    z-index: 2;
+    text-align: center;
+}
+
+.home-background-image {
+    background-image: url('images/background.jpeg');
+    /* border-radius: 10px; */
+    /* height: 550px; */
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    color: 'white';
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+    /* background-repeat: 'no-repeat'; */
+    z-index: -1;
+}
+
+.home-background-image-overlay {
+    background-color: rgba(0, 0, 0, 0.5); /* Black w/opacity/see-through */
+    /* border-radius: 10px; */
+    /* height: 550px; */
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.cool-btn {
+    border-radius: 29px;
+    padding: 10px 20px 10px 20px;
+    font-size: 20px;
+    font-family: Arial;
+    font-weight: 600;
+    color: var(--color2);
+    background-color: transparent;
+    text-decoration: none;
+    background-color: none;
+    border: 3px solid var(--color2);
+    margin-top: 15px;
+    position: relative;
+    transition: 0.5s;
+    /* transition: width 0.5s ease-in-out, background-color 0.3s ease-in-out; */
+}
+
+.cool-btn:hover {
+    border-radius: 29px;
+    padding: 10px 20px 10px 20px;
+    font-size: 20px;
+    font-family: Arial;
+    font-weight: 600;
+    color: var(--color3);
+    text-decoration: none;
+    background-color: var(--color2);
+    border: 3px solid var(--color2);
+    cursor: pointer;
+}
+
+.cool-btn span {
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: var(--color2);
+    z-index: -1;
+    /* transition: width 0.5s ease-in-out; */
+    border-radius: 29px;
+    transition: 0.5s;
+}
+
+.cool-btn:hover span {
+    width: 100%;
+}
+
+.container {
+    margin: auto;
+}
+
+.hyperlink {
+    text-decoration: none;
+    /* font-weight: bold; */
+}
+
+.hyperlink:hover {
+    opacity: 0.8;
+}
